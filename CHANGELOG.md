@@ -1,5 +1,41 @@
 # Changelog
 
+## [1.7.0](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/compare/v1.6.0...v1.7.0) (2022-05-20)
+
+
+### Features
+
+* Add language support policy ([#787](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/787)) ([0b7e9a7](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/0b7e9a79f49d7e50bf3ce5982e0d021d2ed45eea))
+* add r2dbc support for MS SQL Server ([#328](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/328)) ([fddcc7f](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/fddcc7f42f63caa9fc3026fa6348df5cf0751af8))
+* add SQL Server JDBC support ([#263](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/263)) ([2a60a67](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/2a60a67d3a7a31f4138894e8cc8e5dfd6b3a2c04))
+* add support for Postgres IAM authentication in JDBC and R2DBC connectors ([#490](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/490)) ([3799c78](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/3799c78c257d3aafcb535ca5d339f87dddee8843))
+* improve reliability of refresh operations ([#635](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/635)) ([9d4ebe4](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/9d4ebe405c9c67f5c7ac741c0f6c4fde784d7f7c))
+* **jdbc/postgres:** add compatibility for GraalVM native image ([#805](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/805)) ([c00c255](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/c00c25533e31caadf0db8c50077cc1c310fd106c))
+* **mysql:** Deprecated the mysql-socket-factory-connector-j-6 artifact ([#342](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/342)) ([c11b63a](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/c11b63a574d4c55c71d191ef2070b5e770b17b9e))
+* use regionalized instance ids to prevent global conflicts with sqladmin v1 ([#303](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/303)) ([4bacca4](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/4bacca40b49cc1867a06cf4b2b7cc04c94ad9a07))
+
+
+### Bug Fixes
+
+* add undeclared dependency ([#648](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/648)) ([4017d25](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/4017d25cf16c4c9a48d87f23f0c0f84c5dd5f2ac))
+* declare used maven dependencies ([#478](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/478)) ([8483003](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/8483003e2a6b0ac5bc813b9ad8995ff8acdd14ae))
+* Ensure all required dependencies are declared ([#634](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/634)) ([2fe4bf4](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/2fe4bf4a6dae64da16d07528830af3327efd599b))
+* exclude unreachable dependencies ([#512](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/512)) ([8b69577](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/8b69577c8653ca61fa6ac66e021cd03d565f05e8))
+* exclude unreachable optional dependency in r2dbc-core ([#510](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/510)) ([448a353](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/448a35339edde00be43b509239457b1c856d855a))
+* include value of INSTANCE_CONNECTION_NAME when invalid ([#752](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/752)) ([12e3e7b](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/12e3e7bcd82cba3d625d5c05bec7f0120c8f2ad6))
+* only replace refresh result if successful or current result is invalid ([#561](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/561)) ([01226b0](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/01226b000b4596c76ed5809d02853b353725b669))
+* **r2dbc:** fetch updated SSLData for each new connection ([#554](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/554)) ([007759c](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/007759ce9f63ed4247dbeef61772f86f6708d0ac))
+* **r2dbc:** parse 'enable_iam_authn' as String or Boolean as needed ([#688](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/688)) ([d294864](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/d2948640cb111f5b0f621da0cdaa68843feefe7b))
+* remove dependency on internal sun.security.x509 classes ([#564](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/564)) ([79250e2](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/79250e24bbe89ab39d506910b5fb1160a4c1f695))
+* require TLSv1.3 when connecting using IAM authentication ([#506](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/506)) ([822a203](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/822a203ce25d49c58cd1d6a843b60da23d16fbd1))
+* strip padding from access tokens if present ([#566](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/566)) ([406bb66](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/406bb66a37f34ba8b7a7a6f84a64a9e20e9cc925))
+* update dependencies to latest versions ([#399](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/399)) ([9289357](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/9289357755e2065bdbf4b32172685083fd3c142a))
+* update dependencies to latest versions ([#452](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/452)) ([48c4c83](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/48c4c837c9aee87277cd64650139597c033e0bae))
+* update dependencies to latest versions ([#597](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/597)) ([3cba563](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/3cba563023ac1cfcafd94d877865d1d315bb78a6))
+* update dependencies to latest versions ([#617](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/617)) ([6be109a](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/6be109a95f224c43d1c677e9d1be97b6d05f3b8b))
+* update dependencies to latest versions ([#671](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/671)) ([ae81368](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/ae81368bc6e0e7d838c6d1b11e936e186359ffec))
+* update dependencies to latest versions ([#730](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/issues/730)) ([907f759](https://github.com/renovate-bot/cloud-sql-jdbc-socket-factory/commit/907f7598b757e2dbf66e97c5e51850f5cc1cfa49))
+
 ## [1.6.0](https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory/compare/v1.5.0...v1.6.0) (2022-05-03)
 
 
